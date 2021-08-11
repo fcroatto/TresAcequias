@@ -1,0 +1,670 @@
+.table-primario {
+  background-color: rgba(75, 73, 73, 0.651);
+}
+
+.table-secundario {
+  background-color: white;
+}
+
+.table-correcto {
+  background-color: #640606;
+}
+
+.table-inform {
+  background-color: gray;
+}
+
+.table-advertencia {
+  background-color: yellow;
+}
+
+.table-alerta {
+  background-color: red;
+}
+
+.table-suave {
+  background-color: rgba(222, 225, 230, 0.521);
+}
+
+.table-oscuro {
+  background-color: black;
+}
+
+/*MIGRADO DE CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.notShow {
+  display: none;
+}
+
+.tit {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  justify-self: center;
+  padding-top: 10px;
+}
+
+/*ANIMATION*/
+@keyframes serving {
+  5% {
+    opacity: 50%;
+  }
+  15% {
+    opacity: 100%;
+  }
+  50% {
+    transform: translateY(-23px) rotate(45deg);
+  }
+  75% {
+    transform: translateY(-23px) rotate(90deg);
+  }
+  90% {
+    transform: translateY(-23px) rotate(90deg);
+    opacity: 100%;
+  }
+  100% {
+    transform: translateY(-23px) rotate(90deg);
+    opacity: 0%;
+  }
+}
+
+/*LOGO*/
+.logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: inline-block;
+}
+
+.logo .logo__cblanca {
+  position: absolute;
+  left: 25px;
+  top: 30px;
+}
+
+.logo .logo__bblanca {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  top: 20px;
+  left: -4px;
+  z-index: 1;
+  opacity: 0%;
+  animation-name: serving;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 8s;
+  animation-delay: 2s;
+}
+
+/* HEADER */
+.header {
+  background: #212121;
+  background: linear-gradient(180deg, #212121 0%, #a4a29d 100%);
+  display: inline-block;
+  position: relative;
+  height: 140px;
+  width: 100%;
+}
+
+.titulo {
+  display: inline;
+  position: absolute;
+  height: 100px;
+  width: 400px;
+  top: 40px;
+  left: 15vw;
+  margin-top: 12px;
+}
+
+.logo--titulo {
+  position: absolute;
+  top: -26px;
+  left: auto;
+}
+
+.hamburguerIcon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 7px;
+  width: 90px;
+  height: 50px;
+}
+
+.hamburguerIcon img {
+  display: block;
+}
+
+.hamburguerIcon #menu {
+  color: white;
+  font-size: 11px;
+  transform: translate(-5px, 2px);
+}
+
+.header img {
+  display: inline;
+}
+
+.header h2 {
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-family: 'Playfair Display SC', serif;
+  padding-left: 70px;
+  font-size: 2em;
+}
+
+h2 {
+  color: black(3, 3, 3);
+  font-family: 'Playfair Display SC', serif;
+  font-size: 1.5em;
+}
+
+.buscador input {
+  display: block;
+  position: absolute;
+  padding: 10px;
+  width: 300px;
+  height: 30px;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+  border-radius: 1px;
+}
+
+.carrito {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+/* MAIN INDEX */
+.main {
+  background-image: url(../img/bodega.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #640606;
+}
+
+#pprincipal {
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-style: oblique;
+  text-align: center;
+  font-size: 150%;
+}
+
+.vinosRec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.listaVinosRec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 30px;
+  overflow: auto;
+  height: 300px;
+  width: 700px;
+  gap: 15px;
+}
+
+.listaVinosRec h3 {
+  font-size: 1.17em;
+}
+
+.vinosRec h2 {
+  margin-bottom: 20px;
+}
+
+.infoBodegas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.infoBodegas h2 {
+  display: block;
+  margin-bottom: 20px;
+  height: fit-content;
+}
+
+.infoEnviosFlex {
+  background-color: white;
+  color: black;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.infoEnviosFlex p {
+  margin-bottom: 0px;
+}
+
+/*FOOTER*/
+.footer {
+  background: #212121;
+  background: linear-gradient(0deg, #212121 0%, #a4a29d 100%);
+  color: white;
+  display: grid;
+  grid-template-areas: "logo registrate encontranos" "nav nav nav" " copyright copyright copyright";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3fr 1fr 1fr;
+}
+
+.footer h6 {
+  font-size: 0.8rem;
+}
+
+.logo--footer {
+  grid-area: logo;
+}
+
+footer .registrate {
+  grid-area: registrate;
+  justify-self: center;
+  margin-top: 5px;
+  align-self: space-between;
+}
+
+footer .encontranos {
+  grid-area: encontranos;
+  margin-right: 10px;
+  margin-top: 5px;
+  justify-self: flex-end;
+  justify-content: space-between;
+}
+
+footer .registrate h6 {
+  margin-bottom: 5px;
+  margin-left: 30px;
+}
+
+.footer p {
+  grid-area: copyright;
+  justify-self: center;
+  align-self: center;
+}
+
+.footer a {
+  color: white;
+}
+
+footer .navFooter {
+  grid-area: nav;
+  justify-self: center;
+  align-self: center;
+  font-size: 1rem;
+}
+
+.navFooter ul li {
+  display: inline-block;
+}
+
+#carrito {
+  width: 10px;
+  height: 10px;
+}
+
+footer input {
+  width: 150px;
+  padding: 10px;
+  height: 20px;
+  font-size: 12px;
+}
+
+/* MENU */
+#menuBody #fondo {
+  background: #212121;
+  background: linear-gradient(180deg, #212121 0%, #a4a29d 100%);
+}
+
+.menu {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 0px 10px;
+  height: 50vh;
+}
+
+.menuHeader {
+  color: white;
+  display: relative;
+  justify-content: space-between;
+  padding: 10px 50% 20px 10px;
+  width: 100%;
+  height: 160px;
+  transition: all 2s;
+}
+
+.menuHeader h2 {
+  color: white;
+}
+
+.menuHeader #xCerrar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 65px;
+  padding: 7px;
+}
+
+.menuHeader #xCerrar #equis {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  z-index: 2;
+}
+
+.menuHeader #cerrar {
+  font-size: 11px;
+  color: white;
+  margin-left: 4px;
+}
+
+/*TRANSFORM: GIRAR X EN MENU.HTML*/
+#equis {
+  display: block;
+  height: 25px;
+  width: 70px;
+  transition: 2s;
+}
+
+#xCerrar:hover #equis {
+  transform: rotate(360deg);
+  font-size: 30px;
+}
+
+.nav a {
+  color: white;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: space-between;
+  list-style: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 200px;
+  transition: all 3s;
+}
+
+.nav ul li {
+  z-index: 2;
+}
+
+.nav ul li:hover {
+  transform: translate(50px);
+}
+
+.encontranos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.menu input {
+  width: 150px;
+  padding: 10px;
+  height: 20px;
+  font-size: 12px;
+}
+
+#menuBody {
+  background-image: url(../IMG/bodega.jpeg);
+  z-index: -1;
+}
+
+/* CONTACTO */
+.contact {
+  background-image: url(../IMG/bodega.jpeg);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+}
+
+.contact .tit {
+  margin-left: 40vw;
+}
+
+.contact div input {
+  height: 20px;
+  width: 200px;
+  margin-top: 5px;
+}
+
+.inputColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.formContact__Name {
+  grid-area: formName;
+  display: flex;
+  flex-direction: column;
+}
+
+.formContact__lstName {
+  grid-area: formLstName;
+}
+
+.formContact__message {
+  grid-area: formMessage;
+  justify-self: stretch;
+  align-self: stretch;
+}
+
+.formContact__pref {
+  grid-area: formPref;
+}
+
+.formContact__pref select {
+  width: fit-content;
+}
+
+.formContact__offer {
+  grid-area: formOffer;
+}
+
+.formContact__buttons {
+  grid-area: formButtons;
+}
+
+/* PAGINAS DE BEBIDAS */
+.gondola .main {
+  display: grid;
+  grid-template-areas: "tit tit" "filtro vinos" "info info";
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 30px 3fr 110px;
+}
+
+.gondola .main .tit {
+  grid-area: tit;
+}
+
+.gondola .main .productos {
+  grid-area: vinos;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.gondola .main .filtro {
+  grid-area: filtro;
+  margin-top: 15px;
+}
+
+.gondola .main .infoDelivery {
+  grid-area: info;
+  margin-top: 10px;
+}
+
+.cardProduct {
+  background-color: white;
+  border: 1px solid #a8a8a8;
+  font-size: 20px;
+  height: 250px;
+  width: 180px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  box-shadow: 0px 0px 8px 0px #494945;
+}
+
+.cardProduct .cardProduct__img {
+  max-height: 95px;
+}
+
+.cardProduct .cardProduct__nombre {
+  text-align: center;
+}
+
+.cardProduct .cardProduct__rebaja {
+  text-decoration: line-through;
+  font-size: 16px;
+}
+
+.cardProduct .cardProduct__button {
+  font-size: 12px;
+  width: 100%;
+  height: 40px;
+}
+
+.filtro {
+  margin: 0px 15px 0px 15px;
+  background-color: #867373;
+  opacity: 70%;
+}
+
+.w-100 {
+  width: 60% !important;
+  margin-left: 20%;
+}
+
+/*CARRITO*/
+.listaCompras {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 768px) {
+  p {
+    font-size: 12px;
+  }
+  .hideInPhone {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .titulo {
+    margin-left: 20%;
+  }
+  .formContact {
+    display: grid;
+    height: 500px;
+    grid-template-areas: "formName formLstName formMessage" "formEmail formPhone formMessage" "formPref formPref formMessage" "formOffer formOffer formMessage" "formButtons formButtons formButtons";
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    grid-template-rows: repeat(6, 1fr);
+    padding: 15px;
+    align-items: center;
+    gap: 15px;
+  }
+  .formContact__message textarea {
+    font-size: 14px;
+    width: 30vw;
+    height: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .titulo {
+    margin-top: 10px;
+  }
+  .main h2 {
+    font-size: 20px;
+  }
+  #pprincipal {
+    margin: 0px;
+  }
+  #menu {
+    display: none;
+  }
+  .buscador {
+    position: absolute;
+    left: 40vw;
+    top: -2px;
+  }
+  .formContact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 500px;
+    padding: 15px;
+  }
+  .formContact__message textarea {
+    width: 80%;
+    padding: 10px;
+  }
+  .encontranos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100px;
+    align-content: flex-start;
+  }
+  footer .navFooter {
+    font-size: 0.9rem;
+  }
+  .gondola .main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 3fr 110px;
+  }
+}

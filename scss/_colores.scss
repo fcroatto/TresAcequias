@@ -1,0 +1,17 @@
+$borravino: #640606;
+$table-colors: (
+  "primario":   rgba(75, 73, 73, 0.651),
+  "secundario":  white,
+  "correcto":    $borravino,
+  "inform":       rgb(128, 128, 128),
+  "advertencia":    yellow,
+  "alerta":     red,
+  "suave":      rgba(222, 225, 230, 0.521),
+  "oscuro":       black,
+);
+@each $type, $color in $table-colors {
+    .table-#{$type}{
+        background-color:$color,
+    }
+    
+}
