@@ -123,7 +123,7 @@ a {
   display: inline;
   position: absolute;
   height: 100px;
-  width: 400px;
+  width: 450px;
   top: 40px;
   left: 15vw;
   margin-top: 12px;
@@ -274,6 +274,10 @@ h2 {
 }
 
 .infoEnviosFlex p {
+  margin-bottom: 0px;
+}
+
+.breadcrumb {
   margin-bottom: 0px;
 }
 
