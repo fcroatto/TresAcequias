@@ -46,8 +46,26 @@
     <main class="main">
         <h3 class="tit">ESPUMANTES</h3>
         <section class="filtro">
-            FILTRO
-            <!--Aca va ir el filtro-->
+            <dl>    
+                <dt>variedad</dt>
+                <dd><input name='rose' type='checkbox' tabindex='1'> Rosé
+                </dd>
+                <dd><input name='brut nature' type='checkbox' tabindex='2'> Brut Nature
+                </dd>
+                <dd><input name='extra brut' type='checkbox' tabindex='2'> Extra Brut
+                </dd> 
+            </dl>
+            <dl>
+                <dt>rango de precios</dt>
+                <dd><input type='checkbox' tabindex='20' name='rango1' value='550-700' > $550-$700
+                </dd>
+                <dd><input type='checkbox' tabindex='21' name='rango2' value='701-1000' > $701-$1000
+                </dd>
+                <dd><input type='checkbox' tabindex='22' name='rango3' value='1001-1500' > $1001-$1500
+                </dd>
+                <dd><input type='checkbox' tabindex='22' name='rango4' value='1501-3000' > $1501-$3000
+                </dd>           
+            </dl>
         </section>
         <section class="productos">
             <div class="cardProduct">
@@ -115,7 +133,7 @@
             </nav>
         </section>
     </main>
-    <footer class="footer"><footer class="footer">
+    <footer class="footer">
         <div class="logo logo--footer">
             <img class="logo__cblanca" src="../img/copablanca.png" alt="LOGO TRES ACEQUIAS">
             <img class="logo__bblanca"  src="../img/botellablanca.png" alt="Botella sirviendo">
@@ -128,9 +146,18 @@
         </div>
         <div class="encontranos">
             <h6>ENCONTRANOS</h6>
-            <img class="encontranos__instagram" src="../img/instagram.png" alt="LOGO INSTAGRAM">
-            <img class="encontranos__whatsapp" src="../img/whatsapp.png" alt="LOGO WHATSAPP">
-            <img class="encontranos__email" src="../img/email.png" alt="LOGO EMAIL">
+            <div class="encontranos__redes">
+                <img src="../img/instagram.png" alt="LOGO INSTAGRAM">
+                <span>tresacequias.cba</span> 
+            </div>
+            <div class="encontranos__redes">
+                <img src="../img/whatsapp.png" alt="LOGO WHATSAPP">
+                <span>+54 9 3571543906</span>
+            </div>
+            <div class="encontranos__redes">
+            <img src="../img/email.png" alt="LOGO EMAIL"> 
+            <span>tresacequias.cba@gmail.com</span> 
+            </div>
             <div class="notShow">Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
         </div>
         <div class="navFooter">
@@ -141,35 +168,6 @@
                 <li class="navFooter__destilados"><a href="destilados.html">DESTILADOS</a></li>
                 <li class="navFooter__espumantes" ><a href="espumantes.html">ESPUMANTES</a></li>
                 <li class="navFooter__contacto"><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </div>
-            <p>COPYRIGTH</p>
-    </footer>
-        <div class="logo logo--footer">
-            <img class="logo__cblanca" src="../IMG/copablanca.png" alt="LOGO TRES ACEQUIAS">
-            <img class="logo__bblanca"  src="../IMG/botellablanca.png" alt="Botella sirviendo">
-        </div>
-        <div class="registrate">
-            <h6>REGISTRATE</h6>
-            <form action="" method="POST"   enctype="">
-                <input type="email" name="email" placeholder="Ingresa tu email">
-            </form>
-        </div>
-        <div class="encontranos">
-            <h6>ENCONTRANOS</h6>
-            <img class="encontranos__instagram" src="../IMG/instagram.png" alt="LOGO INSTAGRAM">
-            <img class="encontranos__whatsapp" src="../IMG/whatsapp.png" alt="LOGO WHATSAPP">
-            <img class="encontranos__email" src="../IMG/email.png" alt="LOGO EMAIL">
-            <div class="notShow">Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
-        </div>
-        <div class="navFooter">
-            <ul>
-                <li class="navFooter__tintos" ><a href="Tintos.html">TINTOS</a></li>
-                <li class="navFooter__blancos" ><a href="Blancos.html">BLANCOS</a></li>
-                <li class="navFooter__cervezas" ><a href="Cervezas.html">CERVEZAS</a></li>
-                <li class="navFooter__destilados"><a href="Destilados.html">DESTILADOS</a></li>
-                <li class="navFooter__espumantes" ><a href="Espumantes.html">ESPUMANTES</a></li>
-                <li class="navFooter__contacto"><a href="Contacto.html">CONTACTO</a></li>
             </ul>
         </div>
             <p>COPYRIGTH</p>

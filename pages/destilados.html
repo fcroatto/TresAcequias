@@ -46,8 +46,21 @@
     <main class="main">
         <h3 class="tit">DESTILADOS</h3>
         <section class="filtro">
-                FILTRO
-                <!--Aca va ir el filtro-->
+            <dl>    
+                <dt>variedad</dt>
+                <dd><input name='nacionales' type='checkbox' tabindex='1'> Nacionales
+                </dd>
+                <dd><input name='importados' type='checkbox' tabindex='2'> Importados
+                </dd>
+            </dl>
+            <dl>
+                <dt>rango de precios</dt>
+                </dd>
+                <dd><input type='checkbox' tabindex='22' name='rango3' value='1001-1500' > $1001-$1500
+                </dd>
+                <dd><input type='checkbox' tabindex='22' name='rango4' value='1501-3000' > $1501-$3000
+                </dd>           
+            </dl>
         </section>
         <section class="productos">
             <div class="cardProduct">
@@ -128,9 +141,18 @@
         </div>
         <div class="encontranos">
             <h6>ENCONTRANOS</h6>
-            <img class="encontranos__instagram" src="../img/instagram.png" alt="LOGO INSTAGRAM">
-            <img class="encontranos__whatsapp" src="../img/whatsapp.png" alt="LOGO WHATSAPP">
-            <img class="encontranos__email" src="../img/email.png" alt="LOGO EMAIL">
+            <div class="encontranos__redes">
+                <img src="../img/instagram.png" alt="LOGO INSTAGRAM">
+                <span>tresacequias.cba</span> 
+            </div>
+            <div class="encontranos__redes">
+                <img src="../img/whatsapp.png" alt="LOGO WHATSAPP">
+                <span>+54 9 3571543906</span>
+            </div>
+            <div class="encontranos__redes">
+            <img src="../img/email.png" alt="LOGO EMAIL"> 
+            <span>tresacequias.cba@gmail.com</span> 
+            </div>
             <div class="notShow">Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
         </div>
         <div class="navFooter">

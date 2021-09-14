@@ -46,8 +46,26 @@
     <main class="main">
         <h3 class="tit">BLANCOS</h3>
         <section class="filtro">
-                FILTRO
-                <!--Aca va ir el filtro-->
+            <dl>    
+                <dt>variedad</dt>
+                <dd><input name='suavignon blanc' type='checkbox' tabindex='1'> Suavignon Blanc
+                </dd>
+                <dd><input name='viognier' type='checkbox' tabindex='2'> Viognier
+                </dd>
+                <dd><input name='torrontes' type='checkbox' tabindex='2'> Torrontés
+                </dd>
+            </dl>
+            <dl>
+                <dt>rango de precios</dt>
+                <dd><input type='checkbox' tabindex='20' name='rango0' value='250-400' > $250-$400
+                </dd>
+                <dd><input type='checkbox' tabindex='20' name='rango1' value='401-600' > $401-$600
+                </dd>
+                <dd><input type='checkbox' tabindex='21' name='rango2' value='601-1000' > $601-$1000
+                </dd>
+                <dd><input type='checkbox' tabindex='22' name='rango3' value='1001-1500' > $1001-$1500
+                </dd>          
+            </dl>
         </section>
         <section class="productos">
             <div class="cardProduct">
@@ -123,9 +141,18 @@
         </div>
         <div class="encontranos">
             <h6>ENCONTRANOS</h6>
-            <img class="encontranos__instagram" src="../img/instagram.png" alt="LOGO INSTAGRAM">
-            <img class="encontranos__whatsapp" src="../img/whatsapp.png" alt="LOGO WHATSAPP">
-            <img class="encontranos__email" src="../img/email.png" alt="LOGO EMAIL">
+            <div class="encontranos__redes">
+                <img src="../img/instagram.png" alt="LOGO INSTAGRAM">
+                <span>tresacequias.cba</span> 
+            </div>
+            <div class="encontranos__redes">
+                <img src="../img/whatsapp.png" alt="LOGO WHATSAPP">
+                <span>+54 9 3571543906</span>
+            </div>
+            <div class="encontranos__redes">
+            <img src="../img/email.png" alt="LOGO EMAIL"> 
+            <span>tresacequias.cba@gmail.com</span> 
+            </div>
             <div class="notShow">Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
         </div>
         <div class="navFooter">

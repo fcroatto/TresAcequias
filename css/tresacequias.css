@@ -120,19 +120,19 @@ a {
 }
 
 .titulo {
-  display: inline;
-  position: absolute;
   height: 100px;
   width: 450px;
   top: 40px;
-  left: 15vw;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 12px;
 }
 
 .logo--titulo {
   position: absolute;
-  top: -26px;
-  left: auto;
+  /*top: -26px;
+    left: auto;*/
+  transform: translateY(-25px);
 }
 
 .hamburguerIcon {
@@ -190,8 +190,8 @@ h2 {
 
 .carrito {
   position: absolute;
-  bottom: 15px;
-  right: 20px;
+  bottom: 25px;
+  right: 15px;
 }
 
 /* MAIN INDEX */
@@ -232,7 +232,8 @@ h2 {
   margin-left: 30px;
   overflow: auto;
   height: 300px;
-  width: 700px;
+  width: 80%;
+  min-width: 180px;
   gap: 15px;
 }
 
@@ -251,6 +252,11 @@ h2 {
   justify-content: space-evenly;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.infoBodegas iframe {
+  height: 315px;
+  width: 560px;
 }
 
 .infoBodegas h2 {
@@ -288,37 +294,33 @@ h2 {
   background: linear-gradient(0deg, #212121 0%, #a4a29d 100%);
   color: white;
   display: grid;
-  grid-template-areas: "logo registrate encontranos" "nav nav nav" " copyright copyright copyright";
+  grid-template-areas: "logo registrate encontranos" "nav nav nav" "copyright copyright copyright";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 3fr 1fr 1fr;
+  grid-template-rows: 110px 1fr 1fr;
 }
 
 .footer h6 {
   font-size: 0.8rem;
 }
 
-.logo--footer {
-  grid-area: logo;
-}
-
-footer .registrate {
+.footer .registrate {
   grid-area: registrate;
   justify-self: center;
   margin-top: 5px;
   align-self: space-between;
 }
 
-footer .encontranos {
+.footer .registrate h6 {
+  margin-bottom: 5px;
+  margin-left: 30px;
+}
+
+.footer .encontranos {
   grid-area: encontranos;
   margin-right: 10px;
   margin-top: 5px;
   justify-self: flex-end;
-  justify-content: space-between;
-}
-
-footer .registrate h6 {
-  margin-bottom: 5px;
-  margin-left: 30px;
+  justify-content: space-around;
 }
 
 .footer p {
@@ -331,27 +333,26 @@ footer .registrate h6 {
   color: white;
 }
 
-footer .navFooter {
+.footer .navFooter {
   grid-area: nav;
-  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
   align-self: center;
   font-size: 1rem;
 }
 
-.navFooter ul li {
+.footer .navFooter ul li {
   display: inline-block;
+  padding-left: 0px;
+}
+
+.logo--footer {
+  grid-area: logo;
 }
 
 #carrito {
   width: 10px;
   height: 10px;
-}
-
-footer input {
-  width: 150px;
-  padding: 10px;
-  height: 20px;
-  font-size: 12px;
 }
 
 /* MENU */
@@ -370,12 +371,10 @@ footer input {
 
 .menuHeader {
   color: white;
-  display: relative;
+  position: relative;
   justify-content: space-between;
-  padding: 10px 50% 20px 10px;
   width: 100%;
   height: 160px;
-  transition: all 2s;
 }
 
 .menuHeader h2 {
@@ -428,8 +427,8 @@ footer input {
   list-style: none;
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 10px;
   height: 200px;
-  transition: all 3s;
 }
 
 .nav ul li {
@@ -449,6 +448,10 @@ footer input {
   margin-top: 20px;
 }
 
+.encontranos .encontranos__redes span {
+  font-size: 0.7rem;
+}
+
 .menu input {
   width: 150px;
   padding: 10px;
@@ -465,17 +468,17 @@ footer input {
 .contact {
   background-image: url(../IMG/bodega.jpeg);
   font-family: Arial, Helvetica, sans-serif;
-  padding: 15px;
+  padding: 5px 15px 15px 15px;
 }
 
 .contact .tit {
-  margin-left: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
 }
 
 .contact div input {
   height: 20px;
-  width: 200px;
-  margin-top: 5px;
 }
 
 .inputColumn {
@@ -509,6 +512,13 @@ footer input {
 
 .formContact__offer {
   grid-area: formOffer;
+  display: flex;
+  flex-direction: row;
+}
+
+.formContact__offer input {
+  width: 22px;
+  margin-top: 0px;
 }
 
 .formContact__buttons {
@@ -537,7 +547,18 @@ footer input {
 
 .gondola .main .filtro {
   grid-area: filtro;
-  margin-top: 15px;
+  margin: 15px 15px 0px 15px;
+  padding-left: 5px;
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 8px 0px #494945;
+  font-size: 11px;
+}
+
+.gondola .main .filtro dt {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: .5rem;
+  margin-bottom: 5px;
 }
 
 .gondola .main .infoDelivery {
@@ -579,20 +600,18 @@ footer input {
   height: 40px;
 }
 
-.filtro {
-  margin: 0px 15px 0px 15px;
-  background-color: #867373;
-  opacity: 70%;
-}
-
 .w-100 {
   width: 60% !important;
   margin-left: 20%;
 }
 
 /*CARRITO*/
+.mainCarrito {
+  min-height: 350px;
+}
+
 .listaCompras {
-  margin-top: 15px;
+  padding-top: 15px;
   margin-left: 15px;
 }
 
@@ -607,9 +626,6 @@ footer input {
 }
 
 @media (min-width: 768px) {
-  .titulo {
-    margin-left: 20%;
-  }
   .formContact {
     display: grid;
     height: 500px;
@@ -627,14 +643,16 @@ footer input {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 460px) {
   .titulo {
+    position: absolute;
     margin-top: 10px;
-    transform: scale(0.7);
-    left: auto;
+    transform: scale(0.65);
+    left: -25px;
   }
   .main h3 {
     font-size: 17px;
+    margin-top: 10px;
   }
   #pprincipal {
     margin: 0px;
@@ -651,7 +669,7 @@ footer input {
   .formContact {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-around;
     align-items: flex-start;
     height: 500px;
@@ -661,18 +679,37 @@ footer input {
     width: 80%;
     padding: 10px;
   }
-  .encontranos {
+  .footer .encontranos {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100px;
     align-content: flex-start;
   }
-  footer .navFooter {
-    font-size: 0.9rem;
+  .footer .encontranos__redes span {
+    display: none;
+  }
+  .footer .navFooter {
+    font-size: 0.60rem;
+  }
+  .footer .navFooter ul {
+    padding-left: 0px;
+  }
+  .footer .registrate input {
+    width: 130px;
   }
   .gondola .main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 30px 3fr 110px;
+  }
+  .infoBodegas iframe {
+    width: 308px;
+    height: 173.25px;
+  }
+  .breadcrumb {
+    font-size: 11px;
+  }
+  .menu h4 {
+    size: 16px;
   }
 }
